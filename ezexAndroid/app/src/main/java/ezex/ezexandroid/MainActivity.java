@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.File;
 import java.io.IOException;
@@ -79,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         EditText port = (EditText) findViewById(R.id.portField);
 
         Log.i("INFO: ", getString(R.string.onConnectMessage) + ip.getText());
+        TextView messageField = (TextView) findViewById(R.id.connectionMessageField);
+        messageField.setText("Establishing connection.");
 
 
         File file = new File(Environment.getExternalStoragePublicDirectory(
@@ -95,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
                         file
                 )
         );
+        messageField.setText("Connection established. Receiving files.");
+        messageField.setText("Done.");
+
 
 
     }
