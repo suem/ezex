@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ezexAndroid</string>
+    <string name="onConnectMessage">"Trying to connect to: "</string>
+</resources>
