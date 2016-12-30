@@ -3,10 +3,10 @@ package ezex.ezexandroid;
 import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
+import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -14,9 +14,6 @@ import android.widget.TextView;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.InetSocketAddress;
-
-import fs.ReceiveClient;
 
 public class MainActivity extends AppCompatActivity {
 
